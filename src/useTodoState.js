@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
-export default initialValue => {
-  const [todos, setTodos] = useState(initialValue);
+export default () => {
+  const [todos, setTodos] = useState([
+    'Go Outside',
+    'Clean the room'
+  ]);
 
   return {
     todos,
